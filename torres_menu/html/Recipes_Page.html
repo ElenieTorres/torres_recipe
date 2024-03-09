@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/recipe_page.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../js/menu.js"></script>
+
+    <title>The Plate of Hunger & Knife</title>
+
+</head>
+<body>
+
+    <div class="container main-container">
+
+
+        
+        <!------- NavBar ------->
+        <div class="container navbar-container">
+            <nav>
+                <ul>
+                    <li><a href=""><img src="../images/logo3.png" id="logo"></a></li>
+                    <ul id="sidebar">
+                        <li id="close-menu" onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="../html/Recipes_Page.html">Recipes</a></li>
+                        <li><a href="#">Cookbook</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div id="search">
+                        <div class="search-bar-container">
+                            <input id="searchbox" type="search" placeholder="search">
+                            <button id="btnsearch"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+                        </div>
+                        <li id="close-searchbar" onclick = hideSearchbar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    </div>
+                    <li id="open-searchbar" onclick = showSearchbar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+                    <li id="open-menu" onclick = showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <!------- Content ------->
+        <div class="recipes-content-container">
+
+            <div class="ctn-recipes-grid">
+
+                <div class="recipe">
+                    <div><img src="../images/Pomegranate-Braised-Short Ribs-1.jpg" alt=""></div>
+                    <div class="recipe-details">
+                        <h3>Pomegranate Braised Short Ribs</h3>
+                        <p class="ctn-recipe-author">By Martha Stewart</p>
+                        <a href="../html/Recipe_No.1.html"><button class="btn-see-recipe">See Recipe</button></a>
+                        <div class="ctn-recipe-details"><p>Pomegranate juice and red wine compose a rich ruby-red sauce for tender beef short ribs. Garnish with jewel-like pomegranate seeds just before serving; they give tang and color and make the dish look fancy in a flash.</p></div>
+                    </div>
+                </div>
+
+                <div class="recipe">
+                    <div><img src="../images/Daffodil-Cake.webp" alt=""></div>
+                    <div class="recipe-details">
+                        <h3>Daffodil Cake</h3>
+                        <p class="ctn-recipe-author">By Karlynn Johnston</p>
+                        <a href="../html/Recipe_No.2.html"><button class="btn-see-recipe">See Recipe</button></a>
+                        <div class="ctn-recipe-details"><p>This cake is inspired by spring daffodils and has two gorgeous layers of fluffy and tart, with a light, airy, and bright yellow color. With a light lemon glaze and a decadent texture, this is a great cake to make for any occasion.</p></div>
+                    </div>
+                </div>
+
+                <div class="recipe">
+                    <div><img src="../images/mint-chocolate-brownies.jpg" alt=""></div>
+                    <div class="recipe-details">
+                        <h3>Mint Chocolate Brownie</h3>
+                        <p class="ctn-recipe-author">By Thomas Pagot</p>
+                        <a href="../html/Recipe_No.3.html"><button class="btn-see-recipe">See Recipe</button></a>
+                        <div class="ctn-recipe-details"><p>These vegan brownies celebrate the ideal combination of chocolate and mint. A perfect, delectable summer dessert that is rich in chocolate with an amazing mint glaze.</p></div>
+                    </div>
+                </div>
+
+                <div class="recipe">
+                    <div><img src="../images/Taste-of-Fall-Salad.jpg" alt=""></div>
+                    <div class="recipe-details">
+                        <h3>Taste of Fall Salad</h3>
+                        <p class="ctn-recipe-author">By Kristin Kossak</p>
+                        <a href="../html/Recipe_No.4.html"><button class="btn-see-recipe">See Recipe</button></a>
+                        <div class="ctn-recipe-details"><p>Fall is an opportunity to get back to salad basics: greens, great dressings, grains, and autumnal produce, so don't let the fall season end without trying this simple yet delicious salad.</p></div>
+                    </div>
+                </div>
+
+                <div class="recipe">
+                    <div><img src="../images/fig-and-raspberry-bakewell-tart-1.jpeg" alt=""></div>
+                    <div class="recipe-details">
+                        <h3>Fig and Raspberry Bakewell Tart</h3>
+                        <p class="ctn-recipe-author">By Valli Little</p>
+                        <a href="../html/Recipe_No.5.html"><button class="btn-see-recipe">See Recipe</button></a>
+                        <div class="ctn-recipe-details"><p>This crowd-pleasing tart is sure to keep your family and friends entertained, with fig and raspberry in shortcrust pastry.</p></div>
+                    </div>
+                </div>
+
+                <div class="recipe">
+                    <div><img src="../images/Cucumber-Grape-Salad-with-Poppyseed-Dressing.jpg" alt=""></div>
+                    <div class="recipe-details">
+                        <h3>Cucumber Grape Salad with Poppyseed Dressing</h3>
+                        <p class="ctn-recipe-author">By Nicole Morrissey</p>
+                        <a href="../html/Recipe_No.6.html"><button class="btn-see-recipe">See Recipe</button></a>
+                        <div class="ctn-recipe-details"><p>This grape and cucumber salad is perfectly complemented by a creamy, delectable dressing made with vinegar, Greek yogurt, and poopy seeds.</p></div>
+                    </div>
+                </div> 
+
+            </div>
+
+            <button id="btn-more-recipes">View More Recipes</button>
+
+        </div>
+
+
+
+         <!-- ----- FOOTER ----- -->
+        <div class="container footer-container">
+
+            <div class="ctn-grid">
+                <div class="display-grid">
+                
+                    <div class="ft-columns ft-column-one">
+
+                        <div class="ctn-left-right">
+                            <h3>Newsletter</h3>
+                            <p id="subscribe">Subscribe and get the Latest Recipes right in your inbox</p>
+                            <div class="ctn-subscribe-form">
+                                <form>
+                                    <div><input type="text" placeholder="First Name" id="first_name"></div>
+                                    <div><input type="email" placeholder="Email" id="email"></div>
+                                    <button id="btn-subscribe">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="ft-columns ft-column-two">
+
+                        <div class="ft-menu">
+                            <h4>Menu</h4>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Cookbook</a></li>
+                        </div>
+
+                        <div class="ft-links">
+                            <h4>Useful Links</h4>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </div>
+
+                    </div>
+
+                    <div class="ft-columns ft-column-three">
+                        <div class="ctn-left-right">
+                            <p id="contact">Contact or Visit Us on the following Social Media Sites</p>
+                            <div id="social-media-icons">
+                                <li class="mail"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg></a></li>
+                                <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a></li>
+                                <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+                                <li class="pinterest"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 584 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg></a></li>
+                                <li class="youtube"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a></li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="end"><p>©2024 Cooking Menu Website. The Plate of Hunger & Knife. Designed by Elaine Torres</p></div>
+        
+        </div>
+
+       
+
+    </div>
+
+</body>
+</html>

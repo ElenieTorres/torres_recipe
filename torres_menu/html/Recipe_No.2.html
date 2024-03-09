@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/recipe.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../js/menu.js"></script>
+
+    <title>The Plate of Hunger & Knife</title>
+
+</head>
+<body>
+
+    <div class="container main-container">
+
+        
+        <!------- NavBar ------->
+        <div class="container navbar-container">
+            <nav>
+                <ul>
+                    <li><a href=""><img src="../images/logo3.png" id="logo"></a></li>
+                    <ul id="sidebar">
+                        <li id="close-menu" onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="../html/Home.html">Home</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Cookbook</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div id="search">
+                        <div class="search-bar-container">
+                            <input id="searchbox" type="search" placeholder="search">
+                            <button id="btnsearch"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+                        </div>
+                        <li id="close-searchbar" onclick = hideSearchbar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    </div>
+                    <li id="open-searchbar" onclick = showSearchbar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+                    <li id="open-menu" onclick = showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+         <!------- Content Background ------->
+        <div class="container background-container">
+            <img src="../images/peakpx-1.jpg" alt="">
+        </div>
+
+
+         <!------- Content ------->
+         <div class="container content-container">
+
+
+            <!-- Column-One -->
+            <div class="column column-one">
+        
+        
+                <!-- FULL RECIPE (Row-One-Column-One) -->
+                <div class="row row-one-col1-fullrecipe">
+        
+                    <div class="save-share-print">
+                        <li class="icon share">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"/></svg></a>
+                            <span class="tooltiptext">Share this Recipe</span>
+                        </li>
+                        <li class="icon print">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></a>
+                            <span class="tooltiptext">Print this Recipe</span>
+                        </li>
+                        <li class="icon bookmark">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"/></svg></a>
+                            <span class="tooltiptext">Bookmark this Recipe</span>
+                        </li>
+                    </div>
+        
+                    <h1 class="title">Daffodil Cake</h1>
+                    <p class="author">By Karlynn Johnston</p>
+                    <p class="description">This cake is inspired by spring daffodils and has two gorgeous layers of fluffy and tart, with a light, airy, and bright yellow color. With a light lemon glaze and a decadent texture, this is a great cake to make for any occasion.</p>
+                
+                    <div class="ingredients">
+                        <h2>Ingredients</h2>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>1 cup cake flour</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>3/4 Cup plus 2 Tablespoons sugar</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>12 Egg whites (about 1 1/2 cups)</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>1 1/2 teaspoons cream of tartar</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>1/4 teaspoon salt</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>3/4 cup sugar</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>6 egg yolks</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>1 1/2 teaspoons vanilla extract</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>1/2 teaspoon almond extract</li></div>
+                        <div class="ctn-ingredients"><input type="checkbox"><li>1 lemon icing glaze pre made</li></div>
+                    </div>
+        
+                    <div class="directions">
+                        <h2>Directions</h2>
+        
+                        <div class="ctn-steps"><p>1</p><li>Preheat oven to 375° set the baking rack to the lowest position in your oven.</li></div>
+                        <div class="ctn-steps"><p>2</p><li>Get a tube pan or angel food cake pan 10X4 inches, and a funnel or someway to invert the pan after the cake is baked. It is easiest to size it up now to make sure it will work.</li></div>
+                        <div class="ctn-steps"><p>3</p><li>In a medium bowl stir together the flour and 3/4 cup plus 2 Tablespoons sugar. Set aside.</li></div>
+                        <div class="ctn-steps"><p>4</p><li>In a small mixing bowl beat the egg yolks on high until very thick and light yellow color. Set aside.</li></div>
+                        <div class="ctn-steps"><p>5</p><li>In a large mixing bowl beat the egg whites on medium - high adding the cream of tartar and salt until it is just foamy.</li></div>
+                        
+                        <div class="ctn-steps"><p>6</p><li>Turn the mixer to high speed, beat in the 3/4 cup of sugar adding it 2 tablespoons at a time until the meringue holds stiff peaks.</li></div>
+                        <div class="ctn-steps"><p>7</p><li>Gently fold the vanilla and almond extract into the whipped egg whites.</li></div>
+                        <div class="ctn-steps"><p>8</p><li>Sprinkle the flour/sugar mixture 1/4 at a time over the beaten egg whites folding in gently until the flour/sugar mixture disappears and it is combined.</li></div>
+                        <div class="ctn-steps"><p>9</p><li>Pour half of the egg white mixture into a medium bowl.</li></div>
+                        <div class="ctn-steps"><p>10</p><li>Take your beaten egg yolks and add them to one of the bowls with the egg whites.</li></div>
+                        
+                        <div class="ctn-steps"><p>11</p><li>Spoon the yellow and white batters into the ungreased non stick tube pan alternating to create a great marbled effect. Gently cut through the batter if you want to swirl the colors.</li></div>
+                        <div class="ctn-steps"><p>12</p><li>Bake on the bottom shelf of the oven for 40 minutes or until the top of the cake springs back when touched. Do not open the oven before 40 minutes or the cake may fall.</li></div>
+                        <div class="ctn-steps"><p>13</p><li>When you remove the cake from the oven, immediately invert the cake in the pan onto the funnel, let hang until the cake is completely cool.</li></div>
+                        <div class="ctn-steps"><p>14</p><li>Once the cake is cool you may need to run a sharp knife around the outside of the cake to release it from the pan.</li></div>
+                        <div class="ctn-steps"><p>15</p><li>Glaze the cake with a light lemon glaze.</li></div>
+                    </div>
+        
+                    <div class="btn-container">
+                        <button class="btn btn-bookmark">Bookmark <i class="fa fa-bookmark-o" style="font-weight: bold;"></i></button>
+                        <button class="btn btn-print">Print <i class="fa fa-print" style="font-weight: bold;"></i></button>
+                    </div>
+        
+                </div>
+        
+        
+                <!--RATINGS & REVIEW (Row-Two-Column-One) -->
+                <div class="row row-two-col1-ratereview">
+        
+                    <h2>Ratings & Reviews</h2>
+                    <div class="rate-review-holder">
+        
+                        <!-- FORM-RATE-REVIEW -->
+                        <div>
+                            <div class="ctn-rate-review-recipe">
+                                <h3>Add Rating and Reviews</h3>
+                                <button class="btn-add-ratereview" onclick=showForm()>Rate & Review</button>
+                            </div>
+                            <form id="frm-rate-review">
+                                <div class="ctn-form-layout">
+                                    <p>Your Rating</p>
+                                    <div class="ctn-addratings">
+                                        <input disabled checked class="ratings-input" type="radio" name="user-rate" id="0" value="0">
+                                
+                                        <label class="rating-label" for="1"><i class="rating-icon fa fa-star"></i></label>
+                                        <input type="radio" class="ratings-input" name="user-rate" id="1"  value="1">                                                                                   
+                                        
+                                        <label class="rating-label" for="2"><i class="rating-icon fa fa-star"></i></label>
+                                        <input type="radio" class="ratings-input" name="user-rate" id="2"  value="2">               
+                                        
+                                        <label class="rating-label" for="3"><i class="rating-icon fa fa-star"></i></label>
+                                        <input type="radio" class="ratings-input" name="user-rate" id="3"  value="3">               
+                                        
+                                        <label class="rating-label" for="4"><i class="rating-icon fa fa-star"></i></label>
+                                        <input type="radio" class="ratings-input" name="user-rate" id="4"  value="4">               
+                                        
+                                        <label class="rating-label" for="5"><i class="rating-icon fa fa-star"></i></label>
+                                        <input type="radio" class="ratings-input" name="user-rate" id="5"  value="5">               
+                                    </div>
+                                    <p>Your Review</p>
+                                    <div class="ctn-addreview">
+                                        <textarea id="review" placeholder="Share your thought about this recipe..."></textarea>
+                                    </div>
+                                    <div class="ctn-cancel-submit">
+                                        <button type="reset" class="btn-cancel" onclick= showRateReview()>Cancel</button>
+                                        <button type="submit" class="btn-submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+        
+        
+                        <!-- VIEWERS-REVIEW-RATINGS -->
+                        <div class="ctn-reviews">
+                            <div class="ctn-reviewer">
+                                <p class="profile">S</p>
+                                <h4 class="name">Spring Equinox</h4>
+                            </div>
+                            <div class="ctn-ratings">
+                                <div>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                </div>
+                                <div>
+                                    <p>02/20/2024</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro provident numquam facilis voluptates sunt esse, accusantium amet qui tempora, aut debitis laboriosam quibusdam alias excepturi consequatur possimus labore quaerat.</p>
+                            </div>
+                        </div>
+        
+                        <!-- VIEWERS-REVIEW-RATINGS --> 
+                        <div class="ctn-reviews">
+                            <div class="ctn-reviewer">
+                                <p class="profile">A</p>
+                                <h4 class="name">Autumn Equinox</h4>
+                            </div>
+                            <div class="ctn-ratings">
+                                <div>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                </div>
+                                <div>
+                                    <p>09/22/2024</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro provident numquam facilis voluptates sunt esse, accusantium amet qui tempora, aut debitis laboriosam quibusdam alias excepturi consequatur possimus labore quaerat.</p>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+        
+        
+            <!-- Column-Two -->
+            <div class="column column-two">
+        
+        
+                <!-- ALL ABOUT THE RECIPE (Row-ONE-COLUMN-TWO) -->
+                <div class="row row-one-col2-abouttherecipe">
+                   
+                    <div class="grid-layout layout1">
+                        <div class="all-about-dataholder grd-column1">
+                            <h2>All About the Recipe</h2>
+                            <div class="ctn-data">
+                                <p class="data" id="author">Author:</p>
+                                <a href="#">Karlynn Johnston</a>
+                            </div>
+                            <div class="ctn-data">
+                                <p class="data" id="update">Updated On:</p>
+                                <p>June 1, 2022</p>
+                            </div>
+                            <div class="ctn-data">
+                                <p class="data" id="preptime">Prep Time:</p>
+                                <p>30 minutes</p>
+                            </div>
+                            <div class="ctn-data">
+                                <p class="data" id="cooktime">Cook Time:</p>
+                                <p>40 minutes</p>
+                            </div>
+                            <div class="ctn-data">
+                                <p class="data" id="totaltime">Total Time:</p>
+                                <p>1 hour 10 minutes</p>
+                            </div>
+                            <div class="ctn-data">
+                                <p class="data" id="servings">Servings:</p>
+                                <p>12</p>
+                            </div>
+                            <div class="ctn-data">
+                                <p class="data" id="ratings">Ratings:<p>
+                                <span class="fa fa-star rate" style="font-size: 18px;"></span>
+                                <span class="fa fa-star rate" style="font-size: 18px;"></span>
+                                <span class="fa fa-star rate" style="font-size: 18px;"></span>
+                                <span class="fa fa-star rate" style="font-size: 18px;"></span>
+                                <span class="fa fa-star rate" style="font-size: 18px;"></span>
+                                <p id="equivalent">5</p>
+                            </div>
+                            <div class="ctn-data">
+                                <p class="data" id="reviews">Reviews:</p>
+                                <p>5</p>
+                            </div>      
+                        </div>
+                        <div class="all-about-dataholder grd-column2">
+                            <div class="ctn-image"><img id="recipe-image" src="../images/Daffodil-Cake.webp" alt=""></div>
+                        </div>
+                    </div>
+                         
+                </div>
+        
+        
+                <!-- RELATED RECIPE (Row-Two-Column-Two) -->
+                <div class="row row-two-col2-relatedrecipe">
+                    
+                    <h2>Related Recipes</h2>
+        
+                    <div class="grid-layout">
+        
+                        <!-- ----- Related Recipe ----- -->
+                        <div class="related-recipe">
+                            <div class="related-recipe-detailsholder">
+                                <a href="#"><h3>Lorem ipsum dolor Lorem</h3></a>
+                                <p>By Lorem ipsum dolor</p>
+                                <div>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                </div>
+                            </div>
+                            <div class="related-recipe-imageholder">
+                                <img src="../images/lemon cake.jpg" alt="">   
+                            </div>
+                        </div>
+        
+                        <!-- ----- Related Recipe ----- -->
+                        <div class="related-recipe">
+                            <div class="related-recipe-detailsholder">
+                                <a href="#"><h3>Lorem ipsum dolor Lorem</h3></a>
+                                <p>By Lorem ipsum dolor</p>
+                                <div>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                </div>
+                            </div>
+                            <div class="related-recipe-imageholder">
+                                <img src="../images/creamy-lemon-pasta.jpg" alt="">   
+                            </div>
+                        </div>
+        
+                        <!-- ----- Related Recipe ----- -->
+                        <div class="related-recipe">
+                            <div class="related-recipe-detailsholder">
+                                <a href="#"><h3>Lorem ipsum dolor Lorem</h3></a>
+                                <p>By Lorem ipsum dolor</p>
+                                <div>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                </div>
+                            </div>
+                            <div class="related-recipe-imageholder">
+                                <img src="../images/lemon-magic-cake.jpg" alt="">   
+                            </div>
+                        </div>
+        
+                        <!-- ----- Related Recipe ----- -->
+                        <div class="related-recipe">
+                            <div class="related-recipe-detailsholder">
+                                <a href="#"><h3>Lorem ipsum dolor Lorem</h3></a>
+                                <p>By Lorem ipsum dolor</p>
+                                <div>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                </div>
+                            </div>
+                            <div class="related-recipe-imageholder">
+                                <img src="../images/spaghetti-with-lemon-rocket-and-pinenuts.jpg" alt="">   
+                            </div>
+                        </div>
+        
+                        <!-- ----- Related Recipe ----- -->
+                        <div class="related-recipe">
+                            <div class="related-recipe-detailsholder">
+                                <a href="#"><h3>Lorem ipsum dolor Lorem</h3></a>
+                                <p>By Lorem ipsum dolor</p>
+                                <div>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                </div>
+                            </div>
+                            <div class="related-recipe-imageholder">
+                                <img src="../images/lemon-cake-with-coconut-flakes-piece-of-delicate-vanilla-dessert-with-cream.jpg" alt="">   
+                            </div>
+                        </div>
+        
+        
+                        <!-- ----- Related Recipe ----- -->
+                        <div class="filler add-filler related-recipe">
+                            <div class="related-recipe-detailsholder">
+                                <a href="#"><h3>Lorem ipsum dolor Lorem</h3></a>
+                                <p>By Lorem ipsum dolor</p>
+                                <div>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star rate"></span>
+                                    <span class="fa fa-star unrate"></span>
+                                </div>
+                            </div>
+                            <div class="related-recipe-imageholder">
+                                <img src="../images/mini-lemon-tarts.jpg" alt="">   
+                            </div>
+                        </div>
+        
+                        
+        
+                    </div>
+                    
+                    <button class="btn btn-related-recipe">View More Related Recipes</button>
+        
+                </div>
+        
+            </div>
+        </div>
+          
+        
+        <!-- ----- FOOTER ----- -->
+        <div class="container footer-container">
+
+            <div class="ctn-grid">
+                <div class="display-grid">
+                
+                    <div class="ft-columns ft-column-one">
+
+                        <div class="ctn-left-right">
+                            <h3>Newsletter</h3>
+                            <p id="subscribe">Subscribe and get the Latest Recipes right in your inbox</p>
+                            <div class="ctn-subscribe-form">
+                                <form>
+                                    <div><input type="text" placeholder="First Name" id="first_name"></div>
+                                    <div><input type="email" placeholder="Email" id="email"></div>
+                                    <button id="btn-subscribe">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="ft-columns ft-column-two">
+
+                        <div class="ft-menu">
+                            <h4>Menu</h4>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Cookbook</a></li>
+                        </div>
+
+                        <div class="ft-links">
+                            <h4>Useful Links</h4>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ft-columns ft-column-three">
+                        <div class="ctn-left-right">
+                            <p id="contact">Contact or Visit Us on the following Social Media Sites</p>
+                            <div id="social-media-icons">
+                                <li class="mail"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg></a></li>
+                                <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a></li>
+                                <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+                                <li class="pinterest"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 584 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg></a></li>
+                                <li class="youtube"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a></li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="end"><p>©2024 Cooking Menu Website. The Plate of Hunger & Knife. Designed by Elaine Torres</p></div>
+        
+        </div>
+
+
+    </div>
+
+</body>
+</html>

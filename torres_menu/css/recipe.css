@@ -1,0 +1,725 @@
+body{
+    font-family: sans-serif;
+    font-size: 15.5px;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+.background-container{
+    width: 100%;
+}
+
+.background-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+
+.content-container{
+    width: 90%;
+    height: max-content;
+    margin-top: -220px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+
+.column{
+    margin: 0 25px;
+}
+
+.btn{
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+}
+
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* C O L U M N - O N E */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+.column-one{
+    width: 60%;
+    height: auto;
+}
+
+
+
+/* <!-- FULL RECIPE (Row-One-Column-One) --> */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+.row-one-col1-fullrecipe{
+    padding: 60px;
+    font-size: 15.5px;
+    text-align: left;
+    line-height: 1.8;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px 0px;
+}
+
+.row-one-col1-fullrecipe li{
+    list-style: none;
+}
+
+.save-share-print{
+    display: flex;
+    justify-content: right;
+}
+
+.icon{
+    width: 20px;
+    height: auto;
+    margin: 5px 10px;
+}
+
+.save-share-print .tooltiptext{
+    width: max-content;
+    padding: 2px 5px;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 62);
+    color: #fff;
+    z-index: 1;
+}
+  
+.icon:hover .tooltiptext{
+    visibility: visible;
+}
+
+.title{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.author{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.description{
+    margin: 25px 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.ingredients{
+    margin: 30px 0;
+    line-height: 2.3;
+}
+
+.ingredients h2{
+    margin-bottom: 20px;
+}
+
+.ingredients .ctn-ingredients{
+    margin-left: 30px;
+    display: flex;
+    align-items: baseline;
+}
+
+.ingredients li{
+    margin-left: 15px;
+    width: 90%;
+}
+
+input[type=checkbox]{
+    accent-color: black;
+    color: white;
+    transform: scale(1.8);
+    border: none;
+}
+
+input[type=checkbox]:checked + li{
+    text-decoration: solid line-through;
+    color: gray;
+}
+
+.directions{
+    margin: 40px 0;
+}
+
+.directions h2{
+    margin-bottom: 20px;
+}
+
+.directions h3{
+    margin-top: 30px;
+}
+
+.directions li{
+    text-align: justify;
+    text-justify: inter-word;
+    width: 90%;
+}
+
+.ctn-steps{
+    display: flex;
+    align-items: baseline;
+}
+
+.ctn-steps p{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin: 15px 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ctn-steps p:hover{
+    background-color: transparent;
+    border: 3px solid gray;
+    font-weight: bold;
+    color: gray;
+}
+
+.ctn-steps p:hover + li{
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.cooks-note{
+    padding: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: whitesmoke;
+}
+
+.cooks-note h2{
+    margin-bottom: 20px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.btn-bookmark, .btn-print{
+    width: max-content;
+    height: 40px;
+    margin: 40px 10px 0 10px;
+}
+
+.btn-bookmark:hover, .btn-print:hover{
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+    color: white;
+    font-weight: normal;
+}
+
+
+
+
+
+/* <!--RATINGS & REVIEW (Row-Two-Column-One) --> */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+.row-two-col1-ratereview{
+    margin-top: 65px;
+    margin-bottom: 50px;
+}
+
+.row-two-col1-ratereview h2{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.rate-review-holder{
+    height: max-content;
+    padding: 30px;
+    text-align: left;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px 0px;   
+}
+
+
+
+/* <!-- FORM-RATE-REVIEW --> */
+/* ---------------------------------------------------- */
+.ctn-rate-review-recipe{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.ctn-rate-review-recipe .btn-add-ratereview{
+    width: max-content;
+    height: max-content;
+    margin: 0 5px;
+    padding: 10px 15px;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+    outline: none; 
+    border: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: black;
+}
+
+.ctn-rate-review-recipe .btn-add-ratereview:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+}
+
+.rate-review-holder form{
+    width: 100%;
+    display: block;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.ctn-form-layout{
+    padding: 20px;
+}
+
+.rate-review-holder form p{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.ctn-addratings, .ctn-addreview{
+    margin: 15px 20px 15px 20px;
+}
+
+
+.ratings-input{
+    position: absolute;
+    left: -9999px;
+}
+
+.rating-label{
+    padding: 0 2px;
+    font-size: 22px;
+}
+
+.rating-icon{
+    color: orange;
+}
+
+.ratings-input:checked ~ .rating-label .rating-icon{
+    color: gray;
+}
+
+.ctn-addratings:hover .rating-label .rating-icon{
+    color: orange;
+}
+
+.ratings-input:hover ~ .rating-label .rating-icon{
+    color: gray;
+}
+
+.ctn-addreview{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.ctn-addreview textarea{
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.ctn-cancel-submit{
+    margin-top: 25px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.btn-cancel, .btn-submit{
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    outline: none; 
+    border: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: black;
+}
+
+.btn-cancel:hover, .btn-submit:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+}
+
+
+
+/* <!-- VIEWERS-REVIEW-RATINGS --> */
+/* ---------------------------------------------------- */
+.ctn-reviews{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.ctn-reviewer{
+    display: flex;
+    align-items: center;
+}
+
+.profile{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: orangered;
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+.ctn-reviewer .name{
+    margin-left: 15px;
+}
+
+.ctn-ratings{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.ctn-ratings p{
+    margin-left: 10px;
+}
+
+.comment{
+    margin-top: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.comment p{
+    line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+
+/* C O L U M N - T W 0 */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+.column-two{
+    width: 30%;
+    height: auto;
+}
+
+
+/* <!-- ALL ABOUT THE RECIPE (Row-ONE-COLUMN-TWO) --> */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+.row-one-col2-abouttherecipe{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px 0px;
+}
+
+.layout1{
+    grid-gap: 0;
+}
+
+.all-about-dataholder{
+    padding: 20px;
+}
+
+.grd-column1{
+    padding: 30px 30px 5px 30px;
+}
+
+.all-about-dataholder .ctn-data{
+    margin: 20px 0;
+    display: flex;
+}
+
+.all-about-dataholder h2{
+    margin-bottom: 40px;
+}
+
+.all-about-dataholder .data{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.all-about-dataholder a{
+    text-decoration: none;
+    color: black;
+}
+
+.all-about-dataholder a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+.rate{
+    color: orange;
+}
+
+.unrate{
+    color: gray;
+}
+
+.fa{
+    letter-spacing: 5px;
+}
+
+#equivalent{
+    margin: 0 10px;
+}
+
+.ctn-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-image img{
+    max-width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover; 
+}
+
+
+
+
+
+/* <!-- RELATED RECIPE (Row-Two-Column-Two) --> */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+.row-two-col2-relatedrecipe{
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+
+.row-two-col2-relatedrecipe h2{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.related-recipe{
+    padding: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px 0px;
+}
+
+.related-recipe h3{
+    text-transform: uppercase;
+}
+
+.related-recipe a{
+    text-decoration: none;
+    color: black;
+}
+
+.related-recipe a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+.related-recipe p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.related-recipe .related-recipe-imageholder{
+    margin-top: 15px;
+}
+
+.related-recipe img{
+    width: 100%;
+    aspect-ratio: 12/6;
+    object-fit: cover;
+}
+
+.btn-related-recipe{
+    width: max-content;
+    height: 50px;
+    margin-top: 35px;
+}
+
+.btn-related-recipe:hover{
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px 0px;
+    font-weight: normal;
+    color: white;
+}
+
+.filler{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- For Content Responsiveness ----- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+@media screen and (max-width: 1350px) {
+
+    .filler{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    .content-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .column{
+        width: 80%;
+    }
+
+    .column-two{
+        margin-top: 30px;
+    }
+
+    .grd-column1{
+        padding: 50px;
+    }
+
+    .grd-column1 .ctn-data{ 
+        margin-top: 25px;  
+    }
+
+    .filler{
+        display: none;
+    }
+
+    .add-filler{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    
+    .grd-column1{
+        padding: 30px 30px 10px 30px;  
+    }
+
+    .grd-column1 .ctn-data{
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .column{
+        width: 90%;
+    }
+    .ingredients .ctn-ingredients{
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .btn-container{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .btn-print, .btn-bookmark{
+        margin: 5px;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 570px){
+    
+    .btn-container{
+        flex-direction: column;
+    }
+
+    .btn-bookmark, .btn-print{
+        width: 100%;
+    }
+}
